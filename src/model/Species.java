@@ -1,80 +1,87 @@
 package src.model;
 
 public class Species {
-  private String m_species;
-  private String m_lifeTime; // lifeTime (ex: 10-18 Years, 80 Years, 156 Days, etc...)
-  private String m_gestationTime; // lifeTime (ex: 10-18 Days, 9 Month, etc...)
+  private String m_species = "chat";
+  private String m_lifeTime = "12-18 Years"; // lifeTime (ex: 10-18 Years, 80 Years, 156 Days, etc...)
+  private String m_gestationTime = "65 Days"; // lifeTime (ex: 10-18 Days, 9 Month, etc...)
 
   // ------------- Constructors ------------- //
-  public Species()
+  /**
+   * ctor
+   */
+  public Species(){}
+  
+  /**
+   * ctor
+   * @param p_species
+   */
+  public Species(String p_species)
   {
-    m_species = "chat";
-    m_lifeTime = "12-18 Years";
-    m_gestationTime = "65 Days";
+    this.m_species = p_species;
   }
 
   // ------------- Getters ------------- //
 
   /**
-     * Get species name
+    * Get species name
     * @return string m_species
     */
   public String getSpecies()
   {
-      return m_species;
+    return this.m_species;
   }
 
   /**
-     * Get lifeTime
+    * Get lifeTime
     * @return string m_lifeTime
     */
   public String getLifeTime()
   {
-      return m_lifeTime;
+    return this.m_lifeTime;
   }
 
   /**
-     * Get gestationTime
+    * Get gestationTime
     * @return string m_gestationTime
     */
   public String getGestationTime()
   {
-      return m_gestationTime;
+    return this.m_gestationTime;
   }
 
   // ------------- Setters ------------- //
 
   /**
-     * Set species name
+    * Set species name
     * @param string p_species
     * @return void 
     */
   public void setSpecies(String p_species)
   {
-      m_species = p_species;
-      return;
+    this.m_species = p_species;
+    return;
   }
 
   /**
-     * Change the gestationTime
+    * Change the gestationTime
     * @param string p_gestationTime
     * @return void 
     */
   public void setGestationTime(String p_gestationTime)
   {
-      m_gestationTime = p_gestationTime;
-      return;
+    this.m_gestationTime = p_gestationTime;
+    return;
   }
 
   /**
-     * For Change the lifetime
+    * For Change the lifetime
     * @param string p_lifeTime
     * @return void
     */
   public void setLifeTime(String p_lifeTime)
   {
-      m_lifeTime = p_lifeTime;
-      return;
+    this.m_lifeTime = p_lifeTime;
+    return;
   }
 
 }

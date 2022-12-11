@@ -10,30 +10,31 @@ public abstract class TestIHM {
     System.out.println("Start TestIHM"); 
     // Basic animal
     Animal animal = new Animal();
-    animal.logSelf();
+    System.out.println(animal);
 
     // Basic animal with name
     Animal bernard = new Animal("bernard");
-    bernard.logSelf();
+    System.out.println(bernard);
 
     // Basic animal with name && string diet
     Animal phillipeCarnivorus = new Animal("phillipeCarnivorus","pizza");
-    phillipeCarnivorus.logSelf();
+    System.out.println(phillipeCarnivorus);
+
 
     // Basic animal with name && Diet diet
     Diet phillipeDiet = new Diet("omnivorus");
     System.out.println("getonlyDiet : " + phillipeDiet.getDietString()); 
     Animal phillipeCarnivorus2 = new Animal("phillipeCarnivorus2", phillipeDiet);
-    phillipeCarnivorus2.logSelf();
+    System.out.println(phillipeCarnivorus2);
 
     // Basic animal with name && string diet && string p_species
     Animal mamp = new Animal("mamp", "carnivorus", "elephant");
-    mamp.logSelf();
+    System.out.println(mamp);
 
     // Basic animal with name && Diet diet && string p_species 
     Diet mamp2Diet = new Diet("carnivorus");
     Animal mamp2 = new Animal("mamp2", mamp2Diet, "elephant");
-    mamp2.logSelf();
+    System.out.println(mamp2);
 
     return;
   }

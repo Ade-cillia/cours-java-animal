@@ -4,13 +4,22 @@ public class Diet {
   private String m_diet;
 
   // ------------- Constructors ------------- //
+
+  /**
+   * ctor
+   */
   public Diet()
   {
-    m_diet = "carnivorus";
+    this.m_diet = "carnivorus";
   }
+
+  /**
+   * ctor
+   * @param p_diet
+   */
   public Diet(String p_diet)
   {
-    m_diet = p_diet;
+    this.m_diet = p_diet;
   }
 
   // ------------- Getters ------------- //
@@ -20,7 +29,7 @@ public class Diet {
     * @return string m_diet
     */
   public String getDietString(){
-    return m_diet;
+    return this.m_diet;
   }
 
   // ------------- Setters ------------- //
@@ -31,7 +40,7 @@ public class Diet {
     * @return void 
     */
   public void setDietString(String p_diet){
-    m_diet = p_diet;
+    this.m_diet = p_diet;
     return;
   }
 }
